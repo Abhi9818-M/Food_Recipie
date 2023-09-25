@@ -5,7 +5,7 @@
 }
 body{
     background-color: rgb(222, 188, 188);
-    
+  
 }
 nav{
     display: flex;
@@ -100,7 +100,7 @@ button{
   }
   
   input[type="search"]::placeholder {
-    color: #bbb;
+    color: #000000;
   }
   
   button[type="submit"] {
