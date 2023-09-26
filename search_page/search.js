@@ -29,13 +29,13 @@ button.addEventListener("click", async function getfood() {
             <img src="${ele.image_url}" alt="">
                 <h3>${ele.title}</h3>
                 <div class="food_item_card_rank">Rank :- ${ele.social_rank}</div>
-                <div class="food_item_card_title">${ele.publisher}</div>
+                <div class="food_item_card_title"><h5>${ele.publisher}</h5></div>
                 <div class="food_item_card_button">
                 <a href="../detail_page/detail.html" class="detail"> 
-                    <button>Detail</button>
+                    <button class="button_detail">Detail</button>
                 </a>
                 <a href="${ele.source_url}">
-                    <button>Receipe Url</button>
+                    <button class="button_detail">Receipe Url</button>
                 </a>  
                 </div>`;
       container.appendChild(div);

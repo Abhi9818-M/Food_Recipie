@@ -8,9 +8,7 @@ body{
   
 }
 
-button{
-    background-color: #c6c9ba;
-}
+
 .main_search{
     display: flex;
     flex-direction: column;
@@ -412,14 +410,19 @@ button{
   
 .food_item_card_title{
     font-family: cursive;
-    color: #78af6e;
     font-size: 20px;
+}
+h5{
+    font-style: italic;
+    background: -webkit-linear-gradient(rgb(157, 182, 145), rgb(86, 77, 183));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 .food_item_card{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #969696;
+    background-image: linear-gradient(#beadad,#cde2d7) ;    
     align-items: center;
     text-align: center;
     width: 100%;
@@ -454,12 +457,20 @@ img{
 }
 .food_item_card_button{
     display: flex;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: space-around;
+    width: 100%;
 
 }
 .food_item_card_button button{
     font-size: 15px;
-    padding: 5px 15px;
-    border-radius: 50px;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+}
+.button_detail{
+    background-image: linear-gradient(#f0baba,#e6aaca) ;    
+}
+.button_detail:hover{
+    transform: scale(1.05) ;
 }
