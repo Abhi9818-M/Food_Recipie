@@ -3,23 +3,29 @@ const container = document.getElementById("detail");
 window.onload = function () {
   loadDetails();
 };
+   
+  
+  const loadDetails = async () => {
+    console.log("details loaded");
+    // const currentPath = window.location.href;
+    // const urlObj = new URL(currentPath);
+    // const params = new URLSearchParams(urlObj.search);
+    // console.log(params);
+    // if (!params.has("recipe_id")) {
+    //   window.location.href = "../main_page/main.html";
+    // }
+    // const data = await fetch(
+    //   ` https://forkify-api.herokuapp.com/api/get?rId=${params.get(
+    //     "recipe_id")}`
+    // );
 
-async function loadDetails() {
-  console.log("details loaded");
-  // const currentPath = window.location.href;
-  // const urlObj = new URL(currentPath);
-  // const params = new URLSearchParams(urlObj.search);
+    // console.log(data);
+    // const res = await data.json();
+    // console.log(res); 
+    // renderDetails(res)
+  
 
-  // const data = await fetch(
-  //   `https://forkify-api.herokuapp.com/api/${params.get(
-  //     "recipe_id"
-  //   )}`
-  // );
-  // console.log(data);
-  // const res = await data.json();
-  // console.log(res);
-  // renderDetails(res)
-
+   
   let response = await fetch(
     `https://forkify-api.herokuapp.com/api/get?rId=47746`
   );

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Food Recipie</title>
     <link rel="stylesheet" href="./search.css">
-   
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <nav>
         <div class="nav_header">
@@ -25,7 +27,7 @@
                 </a>
             </div>
             <div class="nav_line">
-                
+
             </div>
             <div class="nav_icon">
                 <i class="fa-solid fa-user"></i>
@@ -36,12 +38,12 @@
         <div class="search_heading">
             <h2>Search Your Favourite Food</h2>
         </div>
-       <div class="container">
-            <div class="form">
-            <input type="search" placeholder="carrot,broccoli,cucumber,banana,chicken...." id="search">
-            <button type="submit" id="button">Search</button>
+        <div class="container">
+            <div class="form" method="GET">
+                <input type="text" placeholder="carrot,broccoli,cucumber,banana,chicken...." id="search">
+                <input type="submit" value="search" id="button">
+            </div>
         </div>
-       </div>
     </div>
     <div id="food_item">
     </div>
@@ -50,6 +52,5 @@
     </div>
     <script src="./search.js"></script>
 </body>
+
 </html>
-
-
