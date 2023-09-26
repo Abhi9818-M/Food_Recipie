@@ -7,27 +7,9 @@ window.onload = function () {
   
   const loadDetails = async () => {
     console.log("details loaded");
-    // const currentPath = window.location.href;
-    // const urlObj = new URL(currentPath);
-    // const params = new URLSearchParams(urlObj.search);
-    // console.log(params);
-    // if (!params.has("recipe_id")) {
-    //   window.location.href = "../main_page/main.html";
-    // }
-    // const data = await fetch(
-    //   ` https://forkify-api.herokuapp.com/api/get?rId=${params.get(
-    //     "recipe_id")}`
-    // );
-
-    // console.log(data);
-    // const res = await data.json();
-    // console.log(res); 
-    // renderDetails(res)
-  
-
-   
+    
   let response = await fetch(
-    `https://forkify-api.herokuapp.com/api/get?rId=47746`
+    `https://forkify-api.herokuapp.com/api/get?rId=${localStorage.getItem('id')}`
   );
   let data = await response.json();
   console.log(data);
@@ -69,10 +51,7 @@ function printfooddetail(ele) {
     <ul>
     </ul>
   </div>
-   
-  
   `;
-  // <p>Social Rank :- ${ele.social_rank}</p>
   container.appendChild(div);
 }
 

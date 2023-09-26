@@ -21,10 +21,9 @@ button.addEventListener("click", async function getfood() {
     function printFoodList(ele) {
       const div = document.createElement("div");
       div.classList.add("food_item_card");
-      //const Receipe_id = ${ele.recipe_id}
       const heading = ele.recipe_id;
       console.log(heading);
-
+      localStorage.setItem('id',heading)
       div.innerHTML = `
             <img src="${ele.image_url}" alt="">
                 <h3>${ele.title}</h3>
