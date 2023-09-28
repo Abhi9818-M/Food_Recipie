@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(220, 210, 210);
+    background-color: white;
     
 }
 nav{
@@ -16,7 +16,7 @@ nav{
     box-shadow: 10px 10px 20px #c2c2c9;
     padding: 15px 30px;
     width: 100%;
-    position: relative;
+    position: fixed;
     border: none;
 }
 .nav_heading{
@@ -25,13 +25,7 @@ nav{
     font-family: 'FontAwesome';
     color : #88ba7f;
 }
-.nav_button{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    text-align: center;
-    width: 20%;
-}
+
 .nav_buttons{
     padding: 10px 15px;
     border-radius: 20px;
@@ -45,36 +39,247 @@ nav{
     box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
     transform: scale(1.05) ;
 }
-.nav_line{
-    margin-left: 10px;
-    border-left: 3px solid #88ba7f;
-    padding: 12px;
-}
-.fa-user{
-    margin-right: 40px;
-}
+
+
 a{
     text-decoration: none;
 
 }
-button{
-    background-color: #b6d0b1;
+@media (max-width: 768px) {
+    .nav_buttons_recipe{
+        display: none;
+    }
+    .nav_line{
+        display: none;
+    }
+    .nav_icon{
+        display: none;
+    }
 }
-#detail{
-    width: 100%;
+@media (min-width: 375px) {
+    #detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .detail_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 85%;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+    }
+    img{
+        width: 90%;
+        height: 50vh; 
+        margin: 15px 15px 15px 0px;
+        border-radius: 50px;
+    }
+    .section_header{
+        margin: 10px 10px;
+    }
+    .ingred{
+        margin: 25px 0px 20px 10px;
+    }
+    ul{
+       display: flex;
+       justify-content: space-around;
+       flex-direction: column;
+       text-align: start;
+    }
+    
+    
 }
-.detail_div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
+@media (min-width: 425px) {
+    #detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .detail_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 85%;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+    }
+    img{
+        width: 90%;
+        height: 50vh; 
+        margin: 15px 15px 15px 0px;
+        border-radius: 50px;
+    }
+    .section_header{
+        margin: 10px 10px;
+    }
+    .ingred{
+        margin: 25px 0px 20px 10px;
+    }
+    ul{
+       display: flex;
+       justify-content: space-around;
+       flex-direction: column;
+       text-align: start;
+    }
+
+   
+    
 }
-img{
-    width: 70%; 
-    margin: 15px 15px 15px 0px;
-    border-radius: 50px;
+@media (min-width: 768px) {
+    #detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .detail_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+        align-items: center;
+        position: absolute;
+        top: 15px;
+    }
+    img{
+        width: 80%;
+        height: 50vh; 
+        margin: 15px 15px 15px 0px;
+        border-radius: 50px;
+    }
+    .nav_button{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+    }
+    .nav_line{
+       
+        display: none;
+    }
+    
+    
+}
+@media (min-width: 1024px) {
+    #detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .detail_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+    }
+    img{
+        width: 80%;
+        height: 50vh; 
+        margin: 15px 15px 15px 0px;
+        border-radius: 50px;
+    }
+    .nav_button{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+    }
+    
+    
+    
+    
+}
+@media (min-width: 1440px) {
+    #detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+    .detail_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        height: 90vh;
+        align-items: center;
+    
+    
+    }
+    img{
+        width: 80%;
+        height: 50vh; 
+        margin: 15px 15px 15px 0px;
+        border-radius: 50px;
+    }
+    .section_header{
+        margin-bottom: 40px;
+    }
+    .nav_button{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        text-align: center;
+        width: 15%;
+    }
+    
+    .nav_line{
+        border-left: 3px solid #88ba7f;
+        padding: 14px;
+    }
+    
+}
+@media (min-width: 1536px) {
+    #detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .detail_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        height: 100vh;
+        align-items: center;
+        padding-top: 30px;
+    
+    }
+    img{
+        width: 80%;
+        height: 50vh; 
+        margin: 15px 15px 15px 0px;
+        border-radius: 50px;
+    }
+    .nav_button{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+    }
+    
 }
 
 
@@ -91,14 +296,11 @@ img{
   font-size: 16px;
   font-weight: 400;
   outline: none;
-  outline: 0;
+
   padding: 10px 25px;
   text-align: center;
   transform: translateY(0);
   transition: transform 150ms, box-shadow 150ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   margin-right: 10px;
   margin-top: 15px;
 }
